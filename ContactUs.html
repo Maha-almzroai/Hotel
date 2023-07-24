@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Contacts</title>
+  <link rel="stylesheet" href="Ass.css" type="text/css">
+  <style>
+    h2{
+    text-align: center;
+    }
+
+    body {
+      background-image: url('hotel-con.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sticky">
+    <ul>
+      <p>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Booking.html">Booking</a></li>
+        <li><a href="ContactUs.html">Contact</a></li>
+        <li><a href="AboutUs.html">About</a></li>
+      </p>
+    </ul>
+  </div> <br>
+  <br>
+  <h2><strong>To contact with us please here is our contact information to help you have batter experience </strong>
+  </h2>
+
+  <div class="container">
+    <form method="post" action="contact.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstName" placeholder="Your name"><br>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastName" placeholder="Your last name"><br>
+
+      <label>Your Email: <input type="text" name="email" placeholder="Your email"> </label><br>
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option selected value="Saudi Arabia">Saudi Arabia</option>
+        <option value="UES">UES</option>
+        <option value="Qatar">Qatar</option>
+      </select><br>
+
+      <label> comment :
+        <textarea rows="2" cols="15" name="comments">any comment</textarea>
+      </label> <br>
+      <hr>
+
+      <input type="reset" name="res" value="Reset">
+      <input type="submit" name="sub" value="Save">
+    </form>
+  </div>
+</body>
+
+</html>

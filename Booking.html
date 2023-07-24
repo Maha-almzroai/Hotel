@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking</title>
+
+    <link rel="stylesheet" href="Ass.css" type="text/css">
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        body {
+            background-image: url('hotel-book.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="sticky">
+        <ul>
+            <p>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+            </p>
+        </ul>
+    </div> <br>
+    <br>
+
+    <h2> <strong> If you want to book a room with us, you need to fill in the following data to complete the reservation
+            process </strong> </h2>
+
+    <h5>PORSINAL INFORMATION : </h5>
+
+    <form method="post" action="indx.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstName" placeholder="Your name" required><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastName" placeholder="Your last name" required><br>
+
+        <label>YOUR ID : <input type="text" name="id" > </label><br>
+
+        <label>ENTER A PASSWORD : <input type="password" name="pass" required> </label> <br>
+
+
+        <h5> BOOKING INFORMATION : </h5>
+
+
+        <label> Select a number of rooms
+            <select name="roomNumbers">
+                <option selected value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+            </select> </label>
+
+
+
+        <h5> PAYMENT INFORMATION : </h5>
+
+        <label>ENTER YOUR CREDIT CARD NUMBER : <input type="text" name="cardNum" required> </label> <br>
+
+        <label>CVC : <input type="text" name="cvc" required> </label><br>
+        <label>Month: <select name="Month" >
+            
+                <option value="january" selected>Jan</option>
+                <option value="february">Feb</option>
+                <option value="march">Mar</option>
+                <option value="april">Apr</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">Jul</option>
+                <option value="august">Aug</option>
+                <option value="september">Sep</option>
+                <option value="october">Oct</option>
+                <option value="november">Nov</option>
+                <option value="december">Dec</option>
+            </select><br>
+        </label>
+
+        <label>Year: <select name="Year">
+                <option value="2022" selected>2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select> <br>
+        </label>
+        <hr>
+
+
+        <input type="reset" name="res" value="Reset">
+        <input type="submit" name="Booking" value="Save">
+
+    </form>
+</body>
+
+
+</html>
